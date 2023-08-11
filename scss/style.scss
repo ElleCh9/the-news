@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Urbanist&display=swap');
+@import './variables';
+@import './global-class';
+@import './menu';
+@import './main';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: $font-text;
+    font-size: 18px;
+    max-width: 1200px;
+    display: grid;
+    margin: 0 auto;
+   
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $font-heading;
+}
+
+@media (max-width:600px){
+
+    .wr-section .wr-container {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .lh-section .last-hour-container {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .container-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
